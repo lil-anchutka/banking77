@@ -1,0 +1,11 @@
+run_tag;lora;model_path;best_ckpt;train_params;total_params;trainable_share_pct;train_time_s;train_samples;val_samples;val_accuracy;val_f1_macro;test_f1_macro
+bert-base-uncased;FALSE;artifacts/bert-base-uncased/best_model;artifacts/bert-base-uncased/checkpoints/checkpoint-1410;109541453;109541453;100.0;851.45;9002;1001;0.9271;0.9283;0.9351
+bert-base-uncased-lora;TRUE;artifacts/bert-base-uncased-lora/best_model;artifacts/bert-base-uncased/checkpoints/checkpoint-846;5500493;114958234;4.78;951.5;9002;1001;0.9211;0.9204;0.9215
+Lr_scheduler = cosine;TRUE;artifacts/bert-base-uncased-loracosine/best_model;artifacts/bert-base-uncased/checkpoints/checkpoint-846;5500493;114958234;4.78;1959.38;9002;1001;0.9181;0.9176;0.9225
+lr_scheduler = constant;TRUE;artifacts/bert-base-uncased-loraconstant/best_model;artifacts/bert-base-uncased/checkpoints/checkpoint-846;5500493;114958234;4.78;960.38;9002;1001;0.8711;0.8613;0.8617
+r=18;TRUE;artifacts/bert-base-uncased-lorar18/best_model;artifacts/bert-base-uncased/checkpoints/checkpoint-846;3156557;112614298;2.8;958.34;9002;1001;0.9171;0.9146;0.9236
+r=9;TRUE;artifacts/bert-base-uncased-lorar9/best_model;artifacts/bert-base-uncased/checkpoints/checkpoint-705;1649741;111107482;1.48;988.34;9002;1001;0.9121;0.9103;0.9074
+r=4;TRUE;artifacts/bert-base-uncased-lorar4/best_model;artifacts/bert-base-uncased/checkpoints/checkpoint-846;812621;110270362;0.74;954.81;9002;1001;0.9001;0.8965;0.9095
+lr_rate = 1.5e-3;TRUE;artifacts/bert-base-uncased-loralr_rate_1.5e-3/best_model;artifacts/bert-base-uncased/checkpoints/checkpoint-846;5500493;114958234;4.78;969.59;9002;1001;0.9131;0.9104;0.9192
+lr_rate = 2e-3;TRUE;artifacts/bert-base-uncased-loralr_rate_2e-3/best_model;artifacts/bert-base-uncased/checkpoints/checkpoint-846;5500493;114958234;4.78;965.8;9002;1001;0.8891;0.8877;0.8794
+lr_rate = 1e-4;TRUE;artifacts/bert-base-uncased-loralr_rate_1e-4/best_model;artifacts/bert-base-uncased/checkpoints/checkpoint-846;5500493;114958234;4.78;1282.77;9002;1001;0.7982;0.7624;0.7613

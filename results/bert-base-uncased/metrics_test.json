@@ -1,0 +1,15 @@
+{
+  "test_loss": 0.31203770637512207,
+  "test_model_preparation_time": 0.0026,
+  "test_accuracy": 0.9217532467532468,
+  "test_balanced_accuracy": 0.9217532467532469,
+  "test_precision_macro": 0.9230856292032327,
+  "test_recall_macro": 0.9217532467532469,
+  "test_f1_macro": 0.9215029861060189,
+  "test_precision_weighted": 0.9230856292032324,
+  "test_recall_weighted": 0.9217532467532468,
+  "test_f1_weighted": 0.9215029861060192,
+  "test_runtime": 11.4585,
+  "test_samples_per_second": 268.797,
+  "test_steps_per_second": 16.843
+}

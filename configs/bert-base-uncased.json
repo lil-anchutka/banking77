@@ -1,0 +1,35 @@
+{
+  "model_name": "bert-base-uncased",
+  "lora": {
+    "enabled": false
+  },
+  "tokenizer": {
+    "max_length": 64
+  },
+  "training_args": {
+    "output_dir": "artifacts/bert-base-uncased/checkpoints",
+    "learning_rate": 0.0001,
+    "weight_decay": 0.05,
+    "num_train_epochs": 6,
+    "per_device_train_batch_size": 32,
+    "per_device_eval_batch_size": 64,
+    "gradient_accumulation_steps": 1,
+    "lr_scheduler_type": "linear",
+    "warmup_ratio": 0.06,
+    "max_grad_norm": 1.0,
+    "eval_strategy": "epoch",
+    "save_strategy": "epoch",
+    "save_total_limit": 5,
+    "load_best_model_at_end": true,
+    "metric_for_best_model": "f1_macro",
+    "greater_is_better": true,
+    "logging_steps": 50,
+    "report_to": [
+      "none"
+    ],
+    "seed": 42,
+    "bf16": true,
+    "fp16": false,
+    "dataloader_num_workers": 4
+  }
+}
